@@ -12,7 +12,7 @@ This app is uses The RAG model for Qestion answering.
 
 - [Installation](#Installation)
 
-- [Contributing](#contributing)
+- [Run the project](#Runtheproject)
 
 - [License](#license)
 
@@ -22,7 +22,7 @@ This app is uses The RAG model for Qestion answering.
 
   
 
-- Python 3.12.3
+- Python ==3.10.12
 
   
 
@@ -57,9 +57,14 @@ $ bash ~/.profile
 ```
 7.  Create a new environment using the following command:
 ``` bash 
-$ conda create -n learn-rag-app
+$ conda create -n learn-rag-app python==3.10.12
 ```
 8. Activate the environment
 ``` bash
 $ conda activate learn-rag-app
+```
+
+## Runtheproject
+``` bash
+$ pip install -r requirements.txt
 ```
