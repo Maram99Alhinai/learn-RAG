@@ -14,6 +14,8 @@ This app is uses The RAG model for Qestion answering.
 
 - [Run the project](#Runtheproject)
 
+- [Run the FastAPI server](#run-the-FastAPI-server)
+
 - [License](#license)
 
   
@@ -22,7 +24,7 @@ This app is uses The RAG model for Qestion answering.
 
   
 
-- Python ==3.10.12
+- Python 3.12.3
 
   
 
@@ -57,7 +59,7 @@ $ bash ~/.profile
 ```
 7.  Create a new environment using the following command:
 ``` bash 
-$ conda create -n learn-rag-app python==3.10.12
+$ conda create -n learn-rag-app python==3.12.3
 ```
 8. Activate the environment
 ``` bash
@@ -67,4 +69,9 @@ $ conda activate learn-rag-app
 ## Runtheproject
 ``` bash
 $ pip install -r requirements.txt
+```
+
+## Run the FastAPI server
+``` bash
+$ uvicorn main:app --reload --host 0.0.0.0 --port 5000
 ```
