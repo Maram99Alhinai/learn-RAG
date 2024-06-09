@@ -6,8 +6,9 @@ from fastapi import UploadFile
 class DataController(BaseController):
     
     def __init__(self):
-        super.__init__()
+        super().__init__()
         self.size_scale = 1048576 # convert MB to bytes
+        
         
     def validate_uploaded_file(self, file: UploadFile):
         
