@@ -43,8 +43,7 @@ class DataController(BaseController):
                 random_key + "_" + cleaned_file_name
             )
             
-        print("generate_unique_filepath output")
-        print(new_file_path, random_key + "_" + cleaned_file_name)
+
         return new_file_path, random_key + "_" + cleaned_file_name
     
     
