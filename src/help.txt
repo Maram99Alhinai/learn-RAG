@@ -1,0 +1,41 @@
+1- uvicorn is not enough for production we need to run it behind another  proxy  server 
+
+
+
+
+steps to run 
+- for contnues reload
+ $ uvicorn main:app --reload 
+- for runing in server 
+$ uvicorn main:app --reload --host 0.0.0.0 --port 5000
+
+
+
+To Run the app;
+$- conda activate learn-rag-app
+$- cd src
+$- open Docker desctop in the backgraod
+$- Compose Docker up : docker-compose -f "docker/docker-compose.yml" up -d --build 
+$- uvicorn main:app --reload --host 0.0.0.0 --port 5000
+
+
+
+
+Docker Command:
+-Stop all running containers
+$- sudo docker stop $(docker ps -a -q)
+
+-Remove all stopped containers
+$- sudo docker rm $(docker ps -a -q)
+
+-Remove all images (be cautious)
+$-sudo docker rmi $(docker images -q)
+
+-Remove all images (with force)
+$ sudo docker rmi -f $(docker images -q)
+
+-Remove all volume 
+$-sudo docker volume rm $(docker volume ls -q)
+
+-Clean every thing 
+$-sudo docker system prune --all
